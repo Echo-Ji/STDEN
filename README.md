@@ -1,6 +1,6 @@
 # STDEN
 
-This is pandaif.com in paper Towards Physics-guided Neural Networks for Traffic Flow Prediction.
+This is the implementation of Spatio-temporal Differential Equation Network (STDEN) in paper Towards Physics-guided Neural Networks for Traffic Flow Prediction.
 
 ## Requirement
 
