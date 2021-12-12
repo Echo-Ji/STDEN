@@ -158,7 +158,7 @@ def load_dataset(dataset_dir, batch_size, val_batch_size=None, **kwargs):
             cat_data = np.load(os.path.join(dataset_dir, category + '.npz'))
             data['x_' + category] = cat_data['x']
             data['y_' + category] = cat_data['y']
-    scaler = StandardScaler(mean=data['x_train'].mean(), std=data['x_train'].std()) # 第0维是要预测的量，但是第1维是什么呢？
+    scaler = StandardScaler(mean=data['x_train'].mean(), std=data['x_train'].std()) 
     # Data format
     for category in ['train', 'val', 'test']:
         data['x_' + category] = scaler.transform(data['x_' + category])

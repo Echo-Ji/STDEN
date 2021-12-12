@@ -4,7 +4,7 @@ def masked_mae_loss(y_pred, y_true):
     # print('y_pred: ', y_pred.shape, 'y_true: ', y_true.shape)
     y_true[y_true < 1e-4] = 0
     mask = (y_true != 0).float()
-    mask /= mask.mean() # 将0值的权重分配给非零值
+    mask /= mask.mean() # assign the sample weights of zeros to nonzero-values 
     loss = torch.abs(y_pred - y_true)
     loss = loss * mask
     # trick for nans: https://discuss.pytorch.org/t/how-to-set-nan-in-tensor-to-0/3918/3
@@ -15,7 +15,7 @@ def masked_mape_loss(y_pred, y_true):
     # print('y_pred: ', y_pred.shape, 'y_true: ', y_true.shape)
     y_true[y_true < 1e-4] = 0
     mask = (y_true != 0).float()
-    mask /= mask.mean() # 将0值的权重分配给非零值
+    mask /= mask.mean() 
     loss = torch.abs((y_pred - y_true) / y_true)
     loss = loss * mask
     # trick for nans: https://discuss.pytorch.org/t/how-to-set-nan-in-tensor-to-0/3918/3
