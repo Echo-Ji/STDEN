@@ -1,7 +1,7 @@
-# STDEN
+# Spatio-Temporal Differential Equation Netwoek
 
-This is the implementation of Spatio-temporal Differential Equation Network (STDEN) in the following paper:
-Jiahao Ji, Jingyuan Wang, Zhe Jiang, Jiawei Jiang, and Hu Zhang, Towards Physics-guided Neural Networks for Traffic Flow Prediction, AAAI 2022. 
+This is a Pytroch implementation of Spatio-temporal Differential Equation Network (STDEN) for physics-guided traffic flow prediction, as described in our paper:
+Jiahao Ji, Jingyuan Wang, Zhe Jiang, Jiawei Jiang, and Hu Zhang, **STDEN: Towards Physics-guided Neural Networks for Traffic Flow Prediction**, AAAI 2022. 
 
 The training framework of this project comes from [chnsh](https://github.com/chnsh/DCRNN_PyTorch). Thanks a lot :)
 
