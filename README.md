@@ -1,4 +1,4 @@
-# Spatio-Temporal Differential Equation Netwoek
+# Spatio-Temporal Differential Equation Network
 
 ![STDEN framework](https://github.com/Echo-Ji/STDEN/blob/main/assets/framework.jpg)
 
