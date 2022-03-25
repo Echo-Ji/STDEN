@@ -2,15 +2,10 @@ import logging
 import numpy as np
 import os
 import time
-import pickle
 import scipy.sparse as sp
 import sys
-# import tensorflow as tf
 import torch 
 import torch.nn as nn
-
-from scipy.sparse import linalg
-
 
 class DataLoader(object):
     def __init__(self, xs, ys, batch_size, pad_with_last_sample=True, shuffle=False):

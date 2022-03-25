@@ -9,7 +9,7 @@ from torch.utils.tensorboard import SummaryWriter
 
 from lib import utils
 from model.stden_model import STDENModel
-from lib.metrics import masked_mae_loss, masked_mape_loss, masked_mse_loss, masked_rmse_loss
+from lib.metrics import masked_mae_loss, masked_mape_loss, masked_rmse_loss
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
