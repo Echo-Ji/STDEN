@@ -3,7 +3,7 @@
 ![STDEN framework](https://github.com/Echo-Ji/STDEN/blob/main/assets/framework.jpg)
 
 This is a Pytroch implementation of Spatio-temporal Differential Equation Network (STDEN) for physics-guided traffic flow prediction, as described in our paper:
-Jiahao Ji, Jingyuan Wang, Zhe Jiang, Jiawei Jiang, and Hu Zhang, **[STDEN: Towards Physics-guided Neural Networks for Traffic Flow Prediction](https://www.bigscity.com/publications/stden-towards-physics-guided-neural-networks-for-traffic-flow-prediction/)**, AAAI 2022. 
+Jiahao Ji, Jingyuan Wang, Zhe Jiang, Jiawei Jiang, and Hu Zhang, **[STDEN: Towards Physics-Guided Neural Networks for Traffic Flow Prediction](https://ojs.aaai.org/index.php/AAAI/article/view/20322)**, AAAI 2022. 
 
 The training framework of this project comes from [chnsh](https://github.com/chnsh/DCRNN_PyTorch). Thanks a lot :)
 
@@ -41,17 +41,20 @@ The configuration file of all datasets are as follows:
 |WRS-393|stden_wrs.yaml|
 |ZGC-564|stden_zgc.yaml|
 
-Note the data is not public and I am not allowed to distribute it.
+Note the data is not public, and I am not allowed to distribute it.
 
 ## Cite
 
-If you find the paper usefule, please cite as following:
+If you find the paper useful, please cite as following:
 
 ```tex
-@inproceedings{ji2022stden,
-  title={STDEN: Towards Physics-guided Neural Networks for Traffic Flow Prediction},
-  author={Ji, Jiahao and Wang, Jingyuan and Jiang, Zhe and Jiang, Jiawei and Zhang, Hu},
-  booktitle={2022 AAAI Conference on Artificial Intelligence (AAAI'22)},
-  year={2022} 
+@inproceedings{ji2022stden, 
+  title={{STDEN}: Towards physics-guided neural networks for traffic flow prediction}, 
+  author={Ji, Jiahao and Wang, Jingyuan and Jiang, Zhe and Jiang, Jiawei and Zhang, Hu}, 
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence}, 
+  year={2022}, 
+  volume={36}, 
+  number={4},   
+  pages={4048-4056}
 }
 ```
